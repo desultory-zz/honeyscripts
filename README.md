@@ -9,4 +9,5 @@ reads a ssh honeypot log file and writes all ips to a file, keeps history and de
 
 - ip_to_iptables.py
 
-reads ip file and creates iptables tules to block all ips in the file
+reads ip file and creates iptables rules to block all ips in the file
+the file created is effectively a bash script
