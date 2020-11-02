@@ -21,7 +21,7 @@ except FileNotFoundError:
         rules = []
 
 for i in ips:
-        rule = "iptables -I INPUT -s %s/24 -j DROP" % (i)
+        rule = "iptables -I INPUT -s %s/32 -j DROP" % (i)
         if rule not in rules:
                 rules.append(rule)
 
